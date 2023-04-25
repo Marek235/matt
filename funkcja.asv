@@ -1,0 +1,21 @@
+function cal = funkcja(x)
+    y = 0;
+    persistent yn
+    if isempty(yn)
+        yn = [0, 0, 0];
+    end
+
+    persistent xn
+    if isempty(xn)
+        xn = [0, 0, 0];
+    end
+
+    y = 2.995*yn(1) - 2.99*yn(2) + 0.995*y(3) + 0.003763*xn(1) - 0.007481*xn(2) + 0.003718*xn(3);
+    yn(3) = yn(2);
+    yn(2) = yn(1);
+    yn(1) = y;
+    xn(3) = xn(2);
+    xn(2) = xn(1);
+    xn(1) = x;
+    cal=y;
+end
