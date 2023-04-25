@@ -22,9 +22,13 @@ W Simulinku udało mi się otrzymać następujące wartości dla regulatora PI. 
 
 Następnie zaimplementowałem cały układ w darmowym programie Codesys.
 
+Poniżej znajduje się odpowiedź samego obiektu.
+
 <p align="center">
   <img width="623" height="375" src="./readme_files/main_plc.png">
 </p>
+
+W celu regulacji obiektu dyskretnego został użyty regulator PI. Można zobaczyć, że odpowiedź obiektu w stanie ustalonym dąży do wartości zadanej (w tym wypadku o wartości 1)
 
 <p align="center">
   <img width="623" height="375" src="./readme_files/wynik_końcowy.png">
